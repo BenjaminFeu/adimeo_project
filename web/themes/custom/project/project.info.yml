@@ -1,0 +1,14 @@
+name: project
+type: theme
+description: Theme pour projet adimeo
+package: Other
+core: 8.x
+libraries:
+  - project/global-styling
+ 
+base theme: classy
+#Using Classy as a base theme https://www.drupal.org/theme-guide/8/classy
+
+regions:
+  content: Content
+  header: Header

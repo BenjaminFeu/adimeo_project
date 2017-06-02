@@ -1,0 +1,13 @@
+global-styling:
+    version: Version
+    css:
+        theme:
+            css/style.css: {}
+    js:
+        //cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js: {type: external, minified:true}
+        js/main.js: {}
+
+
+
+
+
