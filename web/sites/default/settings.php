@@ -760,18 +760,10 @@ $settings['file_scan_ignore_directories'] = [
  * Keep this code block at the end of this file to take full effect.
  */
 #
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
-$config_directories['sync'] = '../config/sync';
-$databases['default']['default'] = array (
-  'database' => 'd8_project',
-  'username' => 'root',
-  'password' => 'core17labie',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+   include $app_root . '/' . $site_path . '/settings.local.php';
+ }
+$config_directories['sync'] = $app_root . '/' . $site_path . '/config/sync';
+$config_directories['active'] = $app_root . '/' . $site_path . '/config/active';
+$config_directories['staging'] = $app_root . '/' . $site_path . '/config/staging';
 $settings['install_profile'] = 'standard';
