@@ -1,0 +1,24 @@
+header #block-project-branding {
+  /*        background : red;*/
+  height: 145px;
+  text-align: center; }
+  header #block-project-branding img {
+    height: 90px;
+    position: relative;
+    top: 35px; }
+header #block-project-main-menu {
+  height: 55px;
+  background: #1f497d; }
+  header #block-project-main-menu ul {
+    text-align: center;
+    position: relative;
+    top: 20px; }
+    header #block-project-main-menu ul li {
+      display: inline; }
+      header #block-project-main-menu ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        margin-right: 70px; }
+
+/*# sourceMappingURL=style.css.map */

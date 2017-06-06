@@ -1,0 +1,32 @@
+header{
+    #block-project-branding{
+        /*        background : red;*/
+        height:145px;
+        text-align:center;
+        img{
+            height:90px;
+            position:relative;
+            top:35px;
+        }
+    }
+    #block-project-main-menu{
+        height:55px;
+        background: #1f497d;
+        ul{
+            text-align:center;
+            position:relative;
+            top: 20px;
+            li{
+                display:inline;
+
+                a{
+                    text-decoration:none;
+                    color:white;
+                    font-size:15px;
+                    margin-right:70px;
+
+                }
+            }
+        }
+    }
+}
