@@ -1,24 +1,43 @@
-header #block-project-branding {
-  /*        background : red;*/
-  height: 145px;
-  text-align: center; }
-  header #block-project-branding img {
-    height: 90px;
-    position: relative;
-    top: 35px; }
-header #block-project-main-menu {
-  height: 55px;
-  background: #1f497d; }
-  header #block-project-main-menu ul {
-    text-align: center;
-    position: relative;
-    top: 20px; }
-    header #block-project-main-menu ul li {
-      display: inline; }
-      header #block-project-main-menu ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 15px;
-        margin-right: 70px; }
+header {
+  width: 100%; }
+  header #block-project-branding {
+    /*        background : red;*/
+    height: 145px;
+    text-align: center; }
+    header #block-project-branding img {
+      height: 90px;
+      position: relative;
+      top: 35px; }
+  header #block-project-main-menu {
+    height: 55px;
+    background: #1f497d;
+    float: left;
+    width: 95%; }
+    header #block-project-main-menu ul {
+      text-align: center;
+      position: relative; }
+      header #block-project-main-menu ul li {
+        display: inline; }
+        header #block-project-main-menu ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: 15px;
+          margin-right: 70px; }
+  header #block-languageswitcher {
+    background: #1f497d;
+    width: 5%;
+    float: left;
+    height: 55px; }
+    header #block-languageswitcher ul {
+      padding-left: 0px; }
+      header #block-languageswitcher ul li {
+        display: inline; }
+        header #block-languageswitcher ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: 15px; }
+      header #block-languageswitcher ul li.en a {
+        padding-left: 10px;
+        /*                    background: red;*/ }
 
 /*# sourceMappingURL=style.css.map */
