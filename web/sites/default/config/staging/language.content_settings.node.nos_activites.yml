@@ -1,0 +1,11 @@
+uuid: 882c39fd-c5e8-4f2d-9a18-2d659c46db02
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.nos_activites
+id: node.nos_activites
+target_entity_type_id: node
+target_bundle: nos_activites
+default_langcode: site_default
+language_alterable: false

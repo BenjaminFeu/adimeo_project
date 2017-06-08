@@ -1,0 +1,21 @@
+uuid: 27b7c226-d250-495c-bc69-ac3fb914cd17
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titre_commun
+    - node.type.rapport_d_activite
+  module:
+    - text
+id: node.rapport_d_activite.field_titre_commun
+field_name: field_titre_commun
+entity_type: node
+bundle: rapport_d_activite
+label: 'Titre commun'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

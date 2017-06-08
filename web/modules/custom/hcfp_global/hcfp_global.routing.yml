@@ -1,0 +1,8 @@
+
+hcfp_global.home_page_controller_index:
+  path: '/home'
+  defaults:
+    _controller: '\Drupal\hcfp_global\Controller\HomePageController::index'
+    _title: 'Home'
+  requirements:
+    _permission: 'access content'

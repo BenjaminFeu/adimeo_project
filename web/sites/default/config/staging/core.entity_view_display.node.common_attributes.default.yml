@@ -1,0 +1,68 @@
+uuid: cad3aace-d222-483f-99c9-14fcd7a994ce
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.common_attributes.body
+    - field.field.node.common_attributes.field_date_de_mise_a_jour
+    - field.field.node.common_attributes.field_date_de_publication
+    - field.field.node.common_attributes.field_publie
+    - field.field.node.common_attributes.field_titre
+    - field.field.node.common_attributes.field_titre_commun
+    - node.type.common_attributes
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.common_attributes.default
+targetEntityType: node
+bundle: common_attributes
+mode: default
+content:
+  field_date_de_mise_a_jour:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_de_publication:
+    weight: 0
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_publie:
+    weight: 2
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_titre:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_titre_commun:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  body: true
+  langcode: true
+  links: true

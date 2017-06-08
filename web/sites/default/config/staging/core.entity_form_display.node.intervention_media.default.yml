@@ -1,0 +1,48 @@
+uuid: 1b44ebd5-e18e-48d0-8c05-1ffce1948369
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.intervention_media.body
+    - field.field.node.intervention_media.field_date_de_l_intervention
+    - field.field.node.intervention_media.field_titre_commun
+    - field.field.node.intervention_media.field_video_intervention
+    - node.type.intervention_media
+  module:
+    - datetime
+    - text
+    - video_embed_field
+id: node.intervention_media.default
+targetEntityType: node
+bundle: intervention_media
+mode: default
+content:
+  field_date_de_l_intervention:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_titre_commun:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_video_intervention:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+hidden:
+  body: true
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  title: true
+  uid: true

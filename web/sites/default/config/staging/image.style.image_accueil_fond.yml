@@ -1,0 +1,14 @@
+uuid: d0f18f23-d531-4665-aa1f-80d225954b85
+langcode: fr
+status: true
+dependencies: {  }
+name: image_accueil_fond
+label: image_accueil_fond
+effects:
+  47cbea33-f135-485e-bd01-90638d35e654:
+    uuid: 47cbea33-f135-485e-bd01-90638d35e654
+    id: image_resize
+    weight: 1
+    data:
+      width: 1440
+      height: 771

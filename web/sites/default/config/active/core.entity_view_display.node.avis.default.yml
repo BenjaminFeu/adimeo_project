@@ -1,0 +1,113 @@
+uuid: 86b2f5d3-a5ff-4641-ade6-ee1efdd9d05d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.avis.body
+    - field.field.node.avis.field_auditions
+    - field.field.node.avis.field_chapo
+    - field.field.node.avis.field_date_de_mise_a_jour
+    - field.field.node.avis.field_date_de_publication
+    - field.field.node.avis.field_intervention
+    - field.field.node.avis.field_publie
+    - field.field.node.avis.field_resume_de_l_avis
+    - field.field.node.avis.field_sujet
+    - field.field.node.avis.field_titre_commun
+    - node.type.avis
+  module:
+    - datetime
+    - text
+    - user
+id: node.avis.default
+targetEntityType: node
+bundle: avis
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_auditions:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_chapo:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_date_de_mise_a_jour:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_de_publication:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_intervention:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_publie:
+    weight: 105
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_resume_de_l_avis:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_sujet:
+    weight: 107
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_titre_commun:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

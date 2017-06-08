@@ -1,0 +1,28 @@
+uuid: 9928ed74-78e5-4f99-ae76-1abe5ada559d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_auditions
+    - node.type.audition_video
+    - node.type.avis
+id: node.avis.field_auditions
+field_name: field_auditions
+entity_type: node
+bundle: avis
+label: Audition
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      audition_video: audition_video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

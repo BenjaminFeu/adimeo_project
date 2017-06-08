@@ -1,0 +1,10 @@
+uuid: 8cca5435-d97e-40cc-ac60-f19a454bf9f2
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.media
+label: icone
+targetEntityType: media
+cache: true

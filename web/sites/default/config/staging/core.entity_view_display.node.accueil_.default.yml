@@ -1,0 +1,111 @@
+uuid: c9c58d8d-c86c-4e37-8f25-d13255b9f883
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.accueil_.body
+    - field.field.node.accueil_.field_acces_rapide
+    - field.field.node.accueil_.field_affichage_presentation
+    - field.field.node.accueil_.field_carrousel
+    - field.field.node.accueil_.field_image_fond
+    - field.field.node.accueil_.field_nos_activites
+    - field.field.node.accueil_.field_pres_generale
+    - node.type.accueil_
+    - views.view.activites
+  module:
+    - image
+    - link
+    - text
+    - user
+    - views_field_formatter
+id: node.accueil_.default
+targetEntityType: node
+bundle: accueil_
+mode: default
+content:
+  field_acces_rapide:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_affichage_presentation:
+    weight: 1
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_carrousel:
+    weight: 5
+    label: hidden
+    settings:
+      view: 'carrousel::block_1'
+      arguments:
+        field_value:
+          checked: '1'
+          weight: '0'
+        entity_id:
+          checked: '1'
+          weight: '0'
+        delta:
+          checked: '1'
+          weight: '0'
+      implode_character: ''
+      multiple: 0
+    third_party_settings: {  }
+    type: views_field_formatter
+    region: content
+  field_image_fond:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_nos_activites:
+    weight: 6
+    label: hidden
+    settings:
+      view: 'activites::block_1'
+      arguments:
+        field_value:
+          checked: '1'
+          weight: '0'
+        entity_id:
+          checked: '1'
+          weight: '0'
+        delta:
+          checked: '1'
+          weight: '0'
+      implode_character: ''
+      multiple: 0
+    third_party_settings: {  }
+    type: views_field_formatter
+    region: content
+  field_pres_generale:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true

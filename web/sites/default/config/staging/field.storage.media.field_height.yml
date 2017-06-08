@@ -1,0 +1,21 @@
+uuid: 399b6330-fb63-4e44-89c6-1f2bf644ddf6
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.field_height
+field_name: field_height
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

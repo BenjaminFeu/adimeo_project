@@ -1,0 +1,11 @@
+uuid: aaf6a096-3ce8-4d65-96d2-2f9a062a95fc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.common_attributes
+id: node.common_attributes
+target_entity_type_id: node
+target_bundle: common_attributes
+default_langcode: site_default
+language_alterable: false

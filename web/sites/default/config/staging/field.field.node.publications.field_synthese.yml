@@ -1,0 +1,19 @@
+uuid: 0e88531a-0550-4b90-99b8-10e01cf68627
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_synthese
+    - node.type.publications
+id: node.publications.field_synthese
+field_name: field_synthese
+entity_type: node
+bundle: publications
+label: Synthèse
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

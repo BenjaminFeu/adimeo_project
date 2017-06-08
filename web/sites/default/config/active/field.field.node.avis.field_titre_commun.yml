@@ -1,0 +1,21 @@
+uuid: bb289696-00e1-46d7-a82d-7d7901fb5c9b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titre_commun
+    - node.type.avis
+  module:
+    - text
+id: node.avis.field_titre_commun
+field_name: field_titre_commun
+entity_type: node
+bundle: avis
+label: 'Titre commun'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

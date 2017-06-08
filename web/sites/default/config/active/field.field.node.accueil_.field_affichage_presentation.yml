@@ -1,0 +1,23 @@
+uuid: e1f7b0f2-4573-47a6-b198-3a06ee049e09
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_affichage_presentation
+    - node.type.accueil_
+id: node.accueil_.field_affichage_presentation
+field_name: field_affichage_presentation
+entity_type: node
+bundle: accueil_
+label: 'Affichage bloc présentation'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

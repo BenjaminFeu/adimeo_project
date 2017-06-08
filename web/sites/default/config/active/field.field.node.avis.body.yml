@@ -1,0 +1,22 @@
+uuid: 8d49504c-c188-4482-869e-7e54fbd16517
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.avis
+  module:
+    - text
+id: node.avis.body
+field_name: body
+entity_type: node
+bundle: avis
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

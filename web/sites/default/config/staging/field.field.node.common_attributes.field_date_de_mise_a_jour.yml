@@ -1,0 +1,21 @@
+uuid: 049d0cd1-8b86-4908-8181-c2a6a165915a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_de_mise_a_jour
+    - node.type.common_attributes
+  module:
+    - datetime
+id: node.common_attributes.field_date_de_mise_a_jour
+field_name: field_date_de_mise_a_jour
+entity_type: node
+bundle: common_attributes
+label: 'Date de mise à jour'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

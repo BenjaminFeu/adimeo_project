@@ -1,0 +1,18 @@
+uuid: 12150297-2d94-462c-8693-e0fe143801f1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.page_de_base
+id: node.page_de_base.title
+field_name: title
+entity_type: node
+bundle: page_de_base
+label: 'page de base'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

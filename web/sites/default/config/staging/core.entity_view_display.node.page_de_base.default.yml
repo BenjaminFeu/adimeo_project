@@ -1,0 +1,33 @@
+uuid: ad7fb86e-3c52-47f9-841b-46bd632aca83
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.page_de_base.field_corps_de_texte
+    - field.field.node.page_de_base.field_titre_commun
+    - node.type.page_de_base
+  module:
+    - text
+    - user
+id: node.page_de_base.default
+targetEntityType: node
+bundle: page_de_base
+mode: default
+content:
+  field_corps_de_texte:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_titre_commun:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  langcode: true
+  links: true

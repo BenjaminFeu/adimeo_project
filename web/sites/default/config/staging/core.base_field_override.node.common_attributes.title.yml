@@ -1,0 +1,18 @@
+uuid: 34230538-d977-4eab-a90a-b502fc9c1efe
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.common_attributes
+id: node.common_attributes.title
+field_name: title
+entity_type: node
+bundle: common_attributes
+label: 'Common attributes'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

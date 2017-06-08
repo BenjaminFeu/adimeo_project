@@ -1,0 +1,23 @@
+uuid: ee57081d-c366-428e-9e6b-305f7d93f903
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publie
+    - node.type.common_attributes
+id: node.common_attributes.field_publie
+field_name: field_publie
+entity_type: node
+bundle: common_attributes
+label: Publié
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Oui
+  off_label: Non
+field_type: boolean

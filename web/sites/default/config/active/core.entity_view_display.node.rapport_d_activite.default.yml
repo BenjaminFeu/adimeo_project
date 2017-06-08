@@ -1,0 +1,74 @@
+uuid: 8339e323-9845-4e19-8e40-2006fb7e9dcb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.rapport_d_activite.body
+    - field.field.node.rapport_d_activite.field_date_de_publication
+    - field.field.node.rapport_d_activite.field_fichier_pdf
+    - field.field.node.rapport_d_activite.field_image
+    - field.field.node.rapport_d_activite.field_synthese
+    - field.field.node.rapport_d_activite.field_titre_commun
+    - node.type.rapport_d_activite
+  module:
+    - datetime
+    - file
+    - image
+    - text
+    - user
+id: node.rapport_d_activite.default
+targetEntityType: node
+bundle: rapport_d_activite
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date_de_publication:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_fichier_pdf:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_image:
+    weight: 106
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_synthese:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_titre_commun:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

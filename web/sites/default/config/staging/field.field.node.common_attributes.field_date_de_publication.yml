@@ -1,0 +1,21 @@
+uuid: 1ef67de2-92dc-4d36-88a9-5f70998fb8ad
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_de_publication
+    - node.type.common_attributes
+  module:
+    - datetime
+id: node.common_attributes.field_date_de_publication
+field_name: field_date_de_publication
+entity_type: node
+bundle: common_attributes
+label: 'Date de publication'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,18 @@
+uuid: 77a86493-047f-4993-9de6-95e6f899d450
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Accueil
+type: accueil_
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

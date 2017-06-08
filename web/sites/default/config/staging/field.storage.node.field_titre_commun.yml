@@ -1,0 +1,20 @@
+uuid: 991a0577-7979-4555-b5ff-fd9bfa9ee880
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_titre_commun
+field_name: field_titre_commun
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

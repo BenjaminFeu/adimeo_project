@@ -1,0 +1,19 @@
+uuid: f2089c5a-33dd-47af-81b8-65461ad2046c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_mime_type
+    - media_entity.bundle.document
+id: media.document.field_mime_type
+field_name: field_mime_type
+entity_type: media
+bundle: document
+label: 'Mime Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

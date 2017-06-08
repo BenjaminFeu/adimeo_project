@@ -1,0 +1,18 @@
+uuid: beccc407-1164-47e3-b2bd-93f13d4edf60
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.audition_video
+id: node.audition_video.title
+field_name: title
+entity_type: node
+bundle: audition_video
+label: 'Audition vidéo'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

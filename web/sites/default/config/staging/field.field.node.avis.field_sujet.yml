@@ -1,0 +1,28 @@
+uuid: a14a1a1c-4939-432d-a94f-d59a217b8c7e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sujet
+    - node.type.avis
+    - taxonomy.vocabulary.sujet
+id: node.avis.field_sujet
+field_name: field_sujet
+entity_type: node
+bundle: avis
+label: Sujet
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sujet: sujet
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

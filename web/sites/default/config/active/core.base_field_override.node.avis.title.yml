@@ -1,0 +1,18 @@
+uuid: b70dc1eb-7636-4a3b-a12a-275a06c6598d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.avis
+id: node.avis.title
+field_name: title
+entity_type: node
+bundle: avis
+label: Avis
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

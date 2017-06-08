@@ -1,0 +1,28 @@
+uuid: 753544ae-9e12-4241-8829-1180cac82035
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intervention
+    - node.type.avis
+    - node.type.intervention_media
+id: node.avis.field_intervention
+field_name: field_intervention
+entity_type: node
+bundle: avis
+label: Intervention
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      intervention_media: intervention_media
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

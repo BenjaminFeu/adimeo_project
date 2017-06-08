@@ -1,0 +1,62 @@
+uuid: 09fb5919-ecfe-4fbd-9a2d-3abb4f6f9bd1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.common_attributes.body
+    - field.field.node.common_attributes.field_date_de_mise_a_jour
+    - field.field.node.common_attributes.field_date_de_publication
+    - field.field.node.common_attributes.field_publie
+    - field.field.node.common_attributes.field_titre
+    - field.field.node.common_attributes.field_titre_commun
+    - node.type.common_attributes
+  module:
+    - datetime
+    - text
+id: node.common_attributes.default
+targetEntityType: node
+bundle: common_attributes
+mode: default
+content:
+  field_date_de_mise_a_jour:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_de_publication:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_publie:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_titre:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_titre_commun:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  body: true
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  title: true
+  uid: true

@@ -1,0 +1,22 @@
+uuid: 6e07052c-e35e-414d-92b0-9b1aa4e93b55
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - project
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: project_content
+theme: project
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

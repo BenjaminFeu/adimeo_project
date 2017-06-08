@@ -1,0 +1,23 @@
+uuid: d76c3982-9fd2-49f9-b497-605249988fe1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_acces_rapide
+    - node.type.accueil_
+  module:
+    - link
+id: node.accueil_.field_acces_rapide
+field_name: field_acces_rapide
+entity_type: node
+bundle: accueil_
+label: 'Bouton accès rapide'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

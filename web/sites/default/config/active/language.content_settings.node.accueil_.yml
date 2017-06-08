@@ -1,0 +1,11 @@
+uuid: 43bbcb9a-6ef8-480b-8fd9-1002fc3e3312
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.accueil_
+id: node.accueil_
+target_entity_type_id: node
+target_bundle: accueil_
+default_langcode: site_default
+language_alterable: false

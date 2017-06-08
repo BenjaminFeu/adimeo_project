@@ -1,0 +1,27 @@
+uuid: d9a00a7d-0e29-47aa-9e49-570bd227cfde
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fichier_pdf
+    - node.type.rapport_d_activite
+  module:
+    - file
+id: node.rapport_d_activite.field_fichier_pdf
+field_name: field_fichier_pdf
+entity_type: node
+bundle: rapport_d_activite
+label: 'Fichier PDF'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

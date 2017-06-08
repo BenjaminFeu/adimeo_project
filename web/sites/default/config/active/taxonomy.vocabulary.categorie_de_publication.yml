@@ -1,0 +1,9 @@
+uuid: 7f1e361a-8ad2-418f-9e31-893e96804722
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Categorie de publication'
+vid: categorie_de_publication
+description: ''
+hierarchy: 0
+weight: 0

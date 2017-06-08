@@ -1,0 +1,11 @@
+uuid: cbc05e14-f7eb-4278-9709-9a3b7b4cb0a8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.audition_video
+id: node.audition_video
+target_entity_type_id: node
+target_bundle: audition_video
+default_langcode: site_default
+language_alterable: false

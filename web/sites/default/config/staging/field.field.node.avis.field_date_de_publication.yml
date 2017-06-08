@@ -1,0 +1,21 @@
+uuid: e35bb80f-43df-4fc3-b40a-e55362443752
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_de_publication
+    - node.type.avis
+  module:
+    - datetime
+id: node.avis.field_date_de_publication
+field_name: field_date_de_publication
+entity_type: node
+bundle: avis
+label: 'Date de publication'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

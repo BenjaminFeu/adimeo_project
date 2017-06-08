@@ -1,0 +1,23 @@
+uuid: 70ed1241-0454-4c17-b4f1-a52cac032c28
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.carousel.field_image_carou
+    - field.field.node.carousel.field_lien
+    - node.type.carousel
+  module:
+    - user
+id: node.carousel.teaser
+targetEntityType: node
+bundle: carousel
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_image_carou: true
+  field_lien: true
+  langcode: true

@@ -1,0 +1,22 @@
+uuid: d7e03025-269d-46d0-8bff-89a95d5a405e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.accueil_
+  module:
+    - text
+id: node.accueil_.body
+field_name: body
+entity_type: node
+bundle: accueil_
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

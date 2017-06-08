@@ -1,0 +1,18 @@
+uuid: 3887e8bb-d0f1-4a8a-ade6-9f20b5fc11ce
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.carousel
+id: node.carousel.title
+field_name: title
+entity_type: node
+bundle: carousel
+label: carousel
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

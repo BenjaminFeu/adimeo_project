@@ -1,0 +1,25 @@
+uuid: 39b04c83-9ddc-4728-b2df-3898eefb581f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - project
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: project_branding
+theme: project
+region: header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

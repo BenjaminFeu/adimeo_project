@@ -1,0 +1,18 @@
+uuid: c514de16-6293-4d5a-935b-e8663bc08ce5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Page de base'
+type: page_de_base
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

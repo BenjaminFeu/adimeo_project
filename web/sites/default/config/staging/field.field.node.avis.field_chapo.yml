@@ -1,0 +1,22 @@
+uuid: 64e26a5b-fbb8-4320-ac70-9bbd980d614e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_chapo
+    - node.type.avis
+  module:
+    - text
+id: node.avis.field_chapo
+field_name: field_chapo
+entity_type: node
+bundle: avis
+label: Chapô
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

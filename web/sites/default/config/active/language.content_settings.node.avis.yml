@@ -1,0 +1,11 @@
+uuid: 74c149f7-d18b-495d-903e-cffdd65fb0ba
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.avis
+id: node.avis
+target_entity_type_id: node
+target_bundle: avis
+default_langcode: site_default
+language_alterable: false

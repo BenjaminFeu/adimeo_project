@@ -1,0 +1,11 @@
+uuid: 94f17a70-2823-4ffb-8c74-d6ad0a3844d0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorie_de_publication
+id: taxonomy_term.categorie_de_publication
+target_entity_type_id: taxonomy_term
+target_bundle: categorie_de_publication
+default_langcode: site_default
+language_alterable: false

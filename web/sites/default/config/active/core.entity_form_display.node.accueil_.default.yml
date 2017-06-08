@@ -1,0 +1,88 @@
+uuid: 50953a9d-e985-4ea7-b1e3-fd2a54513806
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.accueil_.body
+    - field.field.node.accueil_.field_acces_rapide
+    - field.field.node.accueil_.field_affichage_presentation
+    - field.field.node.accueil_.field_carrousel
+    - field.field.node.accueil_.field_image_fond
+    - field.field.node.accueil_.field_nos_activites
+    - field.field.node.accueil_.field_pres_generale
+    - image.style.thumbnail
+    - node.type.accueil_
+  module:
+    - image
+    - link
+    - text
+id: node.accueil_.default
+targetEntityType: node
+bundle: accueil_
+mode: default
+content:
+  field_acces_rapide:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_affichage_presentation:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_carrousel:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_image_fond:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_nos_activites:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_pres_generale:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains hcfp_global.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function hcfp_global_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the hcfp_global module.
+    case 'help.page.hcfp_global':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function hcfp_global_theme() {
+  return [
+    'hcfp_global' => [
+      'render element' => 'children',
+    ],
+  ];
+}

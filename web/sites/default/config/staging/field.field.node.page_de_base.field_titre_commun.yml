@@ -1,0 +1,21 @@
+uuid: 286da9ba-b803-4998-805c-9b64ae9bcff2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titre_commun
+    - node.type.page_de_base
+  module:
+    - text
+id: node.page_de_base.field_titre_commun
+field_name: field_titre_commun
+entity_type: node
+bundle: page_de_base
+label: 'Titre commun'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

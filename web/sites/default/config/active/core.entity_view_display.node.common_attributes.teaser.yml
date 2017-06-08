@@ -1,0 +1,29 @@
+uuid: 606fe73e-5731-4214-8530-e721923f51ef
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.common_attributes.body
+    - node.type.common_attributes
+  module:
+    - text
+    - user
+id: node.common_attributes.teaser
+targetEntityType: node
+bundle: common_attributes
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

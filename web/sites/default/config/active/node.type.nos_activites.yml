@@ -1,0 +1,18 @@
+uuid: 8699be63-d699-44f1-8fe0-fd62ba832141
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Nos activités'
+type: nos_activites
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

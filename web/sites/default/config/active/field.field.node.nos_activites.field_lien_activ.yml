@@ -1,0 +1,23 @@
+uuid: f63a43ce-a8d4-4076-b237-17698aecb945
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lien_activ
+    - node.type.nos_activites
+  module:
+    - link
+id: node.nos_activites.field_lien_activ
+field_name: field_lien_activ
+entity_type: node
+bundle: nos_activites
+label: Lien
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

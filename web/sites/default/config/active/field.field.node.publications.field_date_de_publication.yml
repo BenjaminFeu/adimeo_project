@@ -1,0 +1,21 @@
+uuid: 16f485ce-868b-486e-88ba-3c1519f29216
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_de_publication
+    - node.type.publications
+  module:
+    - datetime
+id: node.publications.field_date_de_publication
+field_name: field_date_de_publication
+entity_type: node
+bundle: publications
+label: 'Date de publication'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

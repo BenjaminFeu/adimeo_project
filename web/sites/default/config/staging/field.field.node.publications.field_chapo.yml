@@ -1,0 +1,22 @@
+uuid: 320f919d-ab96-48f5-8989-847befc197aa
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_chapo
+    - node.type.publications
+  module:
+    - text
+id: node.publications.field_chapo
+field_name: field_chapo
+entity_type: node
+bundle: publications
+label: Chapô
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,22 @@
+uuid: 06590d5e-338e-42b5-9f7e-d41ccadab916
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resume_de_l_avis
+    - node.type.avis
+  module:
+    - text
+id: node.avis.field_resume_de_l_avis
+field_name: field_resume_de_l_avis
+entity_type: node
+bundle: avis
+label: 'Résumé de l''avis'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

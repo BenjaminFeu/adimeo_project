@@ -1,0 +1,22 @@
+uuid: 91ba2b28-aeda-4ea3-8796-a233fcac2688
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.common_attributes
+  module:
+    - text
+id: node.common_attributes.body
+field_name: body
+entity_type: node
+bundle: common_attributes
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

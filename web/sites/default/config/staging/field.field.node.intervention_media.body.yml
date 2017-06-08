@@ -1,0 +1,22 @@
+uuid: 236a2cc7-b92d-4b12-88f3-a53c0289583e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.intervention_media
+  module:
+    - text
+id: node.intervention_media.body
+field_name: body
+entity_type: node
+bundle: intervention_media
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

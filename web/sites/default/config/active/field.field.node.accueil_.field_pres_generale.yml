@@ -1,0 +1,21 @@
+uuid: 317c19f1-5b7b-4c4b-b22d-744337e2dd5d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pres_generale
+    - node.type.accueil_
+  module:
+    - text
+id: node.accueil_.field_pres_generale
+field_name: field_pres_generale
+entity_type: node
+bundle: accueil_
+label: 'Présentation générale'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

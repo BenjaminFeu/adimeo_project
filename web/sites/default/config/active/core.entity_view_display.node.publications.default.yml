@@ -1,0 +1,80 @@
+uuid: 0ba2164f-1751-418f-8468-a8352ac36fe1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.publications.body
+    - field.field.node.publications.field_category_publication
+    - field.field.node.publications.field_chapo
+    - field.field.node.publications.field_date_de_publication
+    - field.field.node.publications.field_file_pdf_doc
+    - field.field.node.publications.field_synthese
+    - field.field.node.publications.field_titre_commun
+    - node.type.publications
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.publications.default
+targetEntityType: node
+bundle: publications
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_category_publication:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_chapo:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_date_de_publication:
+    weight: 105
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_file_pdf_doc:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_synthese:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_titre_commun:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

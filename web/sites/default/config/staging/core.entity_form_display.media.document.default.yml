@@ -1,0 +1,37 @@
+uuid: 29fe486d-78af-4fa2-8711-af51e512cbc8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.media.document.field_file
+    - field.field.media.document.field_mime_type
+    - field.field.media.document.field_size
+    - media_entity.bundle.document
+  module:
+    - file
+id: media.document.default
+targetEntityType: media
+bundle: document
+mode: default
+content:
+  field_file:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_mime_type: true
+  field_size: true
+  langcode: true
+  uid: true

@@ -1,0 +1,11 @@
+uuid: c42a7926-2ede-4949-826e-dc8db9f1eab5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sujet
+id: taxonomy_term.sujet
+target_entity_type_id: taxonomy_term
+target_bundle: sujet
+default_langcode: site_default
+language_alterable: false
