@@ -6575,7 +6575,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/devel-8.x-1.0-rc2.zip",
-            "reference": null,
+            "reference": "8.x-1.0-rc2",
             "shasum": "011322bf9c263dab29f94640829f4b654e9c5632"
         },
         "require": {
@@ -6641,6 +6641,531 @@
             "source": "http://cgit.drupalcode.org/devel",
             "issues": "http://drupal.org/project/devel",
             "irc": "irc://irc.freenode.org/drupal-contribute"
+        }
+    },
+    {
+        "name": "drupal/blazy",
+        "version": "1.0.0-rc2",
+        "version_normalized": "1.0.0.0-RC2",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/blazy",
+            "reference": "8.x-1.0-rc2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/blazy-8.x-1.0-rc2.zip",
+            "reference": "8.x-1.0-rc2",
+            "shasum": "242f3022b039c6fd3b98f6ce1955d295119b4b5a"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-rc2",
+                "datestamp": "1495745283"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Gaus Surahman",
+                "homepage": "https://www.drupal.org/u/gausarts",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Contributors",
+                "homepage": "https://www.drupal.org/node/2663268/committers",
+                "role": "Contributor"
+            }
+        ],
+        "description": "Provides basic bLazy integration for lazy loading and multi-serving images.",
+        "homepage": "https://drupal.org/project/blazy",
+        "keywords": [
+            "Drupal",
+            "bLazy",
+            "lazyload"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/blazy",
+            "issues": "https://drupal.org/project/issues/blazy"
+        }
+    },
+    {
+        "name": "drupal/slick",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/slick",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/slick-8.x-1.0.zip",
+            "reference": "8.x-1.0",
+            "shasum": "14ae69943a07749163ed13900dcd0a6809c54ebd"
+        },
+        "require": {
+            "drupal/blazy": "~1.0",
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1495746183"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "arshadcn",
+                "homepage": "https://www.drupal.org/user/571032"
+            },
+            {
+                "name": "gausarts",
+                "homepage": "https://www.drupal.org/user/159062"
+            }
+        ],
+        "description": "Slick carousel, the last carousel you'll ever need.",
+        "homepage": "https://drupal.org/project/slick",
+        "keywords": [
+            "Drupal",
+            "carousel",
+            "slideshow"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/slick",
+            "issues": "https://drupal.org/project/issues/slick"
+        }
+    },
+    {
+        "name": "drupal/video_embed_field",
+        "version": "1.5.0",
+        "version_normalized": "1.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/video_embed_field",
+            "reference": "8.x-1.5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-1.5.zip",
+            "reference": "8.x-1.5",
+            "shasum": "f54d470ef7f863604e51e6ae98cd40ef25de5f79"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "require-dev": {
+            "drupal/colorbox": "*",
+            "drupal/media_entity": "*",
+            "drupal/media_entity_embeddable_video": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.x",
+                "datestamp": "1493246342",
+                "package": "Field types"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Sam152",
+                "homepage": "https://www.drupal.org/user/1485048"
+            },
+            {
+                "name": "jec006",
+                "homepage": "https://www.drupal.org/user/855980"
+            },
+            {
+                "name": "plopesc",
+                "homepage": "https://www.drupal.org/user/282415"
+            }
+        ],
+        "description": "A pluggable field type for storing videos from external video hosts such as Vimeo and YouTube.",
+        "homepage": "https://www.drupal.org/project/video_embed_field",
+        "support": {
+            "source": "http://cgit.drupalcode.org/video_embed_field"
+        }
+    },
+    {
+        "name": "drupal/video",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/video",
+            "reference": "8.x-1.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/video-8.x-1.2.zip",
+            "reference": "8.x-1.2",
+            "shasum": "d0af8254ad0e3c496fda89d5b796d6fb86ebda7d"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.x",
+                "datestamp": "1455470039",
+                "package": "Field types"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Jorrit",
+                "homepage": "https://www.drupal.org/user/161217"
+            },
+            {
+                "name": "abhishek-anand",
+                "homepage": "https://www.drupal.org/user/468982"
+            },
+            {
+                "name": "brycefisherfleig",
+                "homepage": "https://www.drupal.org/user/1300764"
+            },
+            {
+                "name": "chaitanya17",
+                "homepage": "https://www.drupal.org/user/1998300"
+            },
+            {
+                "name": "heshanlk",
+                "homepage": "https://www.drupal.org/user/199102"
+            }
+        ],
+        "description": "Video module allows you to embedded videos from YouTube, Vimeo, Facebook, Vine etc (Drupal 8 only) and upload videos and play using HTML5 video player.",
+        "homepage": "https://www.drupal.org/project/video",
+        "support": {
+            "source": "http://cgit.drupalcode.org/video"
+        }
+    },
+    {
+        "name": "drupal/media_entity_document",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/media_entity_document",
+            "reference": "8.x-1.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/media_entity_document-8.x-1.1.zip",
+            "reference": "8.x-1.1",
+            "shasum": "88a45820cf0aeb5f8a3ade3338007771191508e4"
+        },
+        "require": {
+            "drupal/core": "~8.1",
+            "drupal/media_entity": "~1.0 || ~8.1.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.1",
+                "datestamp": "1470211995"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "NerOcrO",
+                "homepage": "https://www.drupal.org/user/1728164",
+                "role": "Maintainer"
+            }
+        ],
+        "description": "Local documents integration for Drupal Media entity.",
+        "homepage": "https://www.drupal.org/project/media_entity_document",
+        "keywords": [
+            "Drupal",
+            "document",
+            "media"
+        ],
+        "support": {
+            "source": "https://www.drupal.org/project/media_entity_document",
+            "issues": "https://www.drupal.org/project/issues/media_entity_document"
+        }
+    },
+    {
+        "name": "drupal/views_field_formatter",
+        "version": "1.5.0",
+        "version_normalized": "1.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/views_field_formatter",
+            "reference": "8.x-1.5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/views_field_formatter-8.x-1.5.zip",
+            "reference": "8.x-1.5",
+            "shasum": "cf93365c2294da640d65adf48a476dcfe1928778"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.5",
+                "datestamp": "1489010883"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Pol",
+                "homepage": "https://www.drupal.org/user/47194"
+            }
+        ],
+        "description": "Use the result of a view to display a field.",
+        "homepage": "https://www.drupal.org/project/views_field_formatter",
+        "support": {
+            "source": "http://cgit.drupalcode.org/views_field_formatter"
+        }
+    },
+    {
+        "name": "drupal/views_slideshow",
+        "version": "4.4.0",
+        "version_normalized": "4.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/views_slideshow",
+            "reference": "8.x-4.4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/views_slideshow-8.x-4.4.zip",
+            "reference": "8.x-4.4",
+            "shasum": "8ace751cf5f9ef316c397fc8f6cb012f58c32a5c"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-4.x": "4.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-4.4",
+                "datestamp": "1488919683"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "See contributors",
+                "homepage": "https://www.drupal.org/node/160350/committers"
+            },
+            {
+                "name": "aaron",
+                "homepage": "https://www.drupal.org/user/33420"
+            },
+            {
+                "name": "redndahead",
+                "homepage": "https://www.drupal.org/user/160320"
+            },
+            {
+                "name": "vbouchet",
+                "homepage": "https://www.drupal.org/user/1671428"
+            }
+        ],
+        "description": "Describes relationships between entities.",
+        "homepage": "https://www.drupal.org/project/views_slideshow",
+        "support": {
+            "source": "https://cgit.drupalcode.org/views_slideshow",
+            "issues": "https://www.drupal.org/project/issues/views_slideshow",
+            "irc": "irc://irc.freenode.org/drupal-contribute"
+        }
+    },
+    {
+        "name": "drupal/markup",
+        "version": "1.0.0-beta1",
+        "version_normalized": "1.0.0.0-beta1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/markup",
+            "reference": "8.x-1.0-beta1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/markup-8.x-1.0-beta1.zip",
+            "reference": "8.x-1.0-beta1",
+            "shasum": "7bb8c7623094178b9e40ff711065bcae8538b46f"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-beta1",
+                "datestamp": "1460007239"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Deciphered",
+                "homepage": "https://www.drupal.org/user/103796"
+            },
+            {
+                "name": "bcostlow",
+                "homepage": "https://www.drupal.org/user/1340686"
+            },
+            {
+                "name": "cYu",
+                "homepage": "https://www.drupal.org/user/202205"
+            },
+            {
+                "name": "ebeyrent",
+                "homepage": "https://www.drupal.org/user/23897"
+            },
+            {
+                "name": "mqanneh",
+                "homepage": "https://www.drupal.org/user/2833163"
+            },
+            {
+                "name": "mrfelton",
+                "homepage": "https://www.drupal.org/user/305669"
+            }
+        ],
+        "description": "Defines a field type for markup.",
+        "homepage": "https://www.drupal.org/project/markup",
+        "support": {
+            "source": "http://cgit.drupalcode.org/markup"
+        }
+    },
+    {
+        "name": "drupal/simple_social_icons",
+        "version": "1.0.0-alpha1",
+        "version_normalized": "1.0.0.0-alpha1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/simple_social_icons",
+            "reference": "8.x-1.0-alpha1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/simple_social_icons-8.x-1.0-alpha1.zip",
+            "reference": "8.x-1.0-alpha1",
+            "shasum": "739d199d711fa5b5558c444ee1b06f0cc33d0665"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-alpha1",
+                "datestamp": "1455000570"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "N.kishorekumar",
+                "homepage": "https://www.drupal.org/user/2887361"
+            },
+            {
+                "name": "heykarthikwithu",
+                "homepage": "https://www.drupal.org/user/2833651"
+            },
+            {
+                "name": "krknth",
+                "homepage": "https://www.drupal.org/user/2659743"
+            },
+            {
+                "name": "neerajskydiver",
+                "homepage": "https://www.drupal.org/user/227792"
+            },
+            {
+                "name": "rakesh.gectcr",
+                "homepage": "https://www.drupal.org/user/1177822"
+            },
+            {
+                "name": "xaiwant",
+                "homepage": "https://www.drupal.org/user/2598494"
+            }
+        ],
+        "description": "Simple social share block to share current page",
+        "homepage": "https://www.drupal.org/project/simple_social_share_block",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/simple_social_share_block",
+            "issues": "http://drupal.org/project/issues/simple_social_share_block"
         }
     }
 ]
