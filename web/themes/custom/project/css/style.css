@@ -49,6 +49,12 @@ header {
   .node--type-accueil- h2 span {
     display: none; }
 
+.skin-default {
+  display: none; }
+
+node__content {
+  height: 980px; }
+
 .field--name-field-image-de-fond {
   text-align: center;
   background: #4a6896; }
@@ -129,8 +135,26 @@ header {
       color: #C00000;
       font-family: 'Open Sans', sans-serif; }
 
-#block-views-block-nos-activites-block-1 .view-nos-activites {
-  display: inline-block;
-  background: blue; }
+#block-views-block-nos-activites-block-1 {
+  margin-top: 100px;
+  width: 100%;
+  /*    background:blue;*/ }
+  #block-views-block-nos-activites-block-1 .views-row {
+    width: 25%;
+    /*        background:pink;*/
+    display: inline-block;
+    text-align: center;
+    height: 312px;
+    width: 31%; }
+    #block-views-block-nos-activites-block-1 .views-row article img {
+      height: 100%;
+      width: 100%; }
+    #block-views-block-nos-activites-block-1 .views-row article h2 {
+      position: relative;
+      top: 180px; }
+      #block-views-block-nos-activites-block-1 .views-row article h2 a {
+        font-size: 40px;
+        color: #1F497D;
+        text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
