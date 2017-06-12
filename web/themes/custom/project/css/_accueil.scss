@@ -1,30 +1,129 @@
-.field--name-field-image-fond {
-    text-align:center;
-    background:#4a6896;
-    img{
-        opacity:0.3;
-    }
-}
-.field--name-field-acces-rapide{
-    .field__item{
-        display:inline;
-        height: 60px;
-        a{
-            font: bold 11px Arial;
-            text-decoration: none;
-            background-color: #EEEEEE;
-            color: #333333;
-            padding: 2px 6px 2px 6px;
-            border-top: 1px solid #CCCCCC;
-            border-right: 1px solid #333333;
-            border-bottom: 1px solid #333333;
-            border-left: 1px solid #CCCCCC;
-            width:355px;
+.node--type-accueil-{
+    h2{
+        height:14px;
+
+        span{
+            display:none;
         }
     }
 }
 
-#views_slideshow_cycle_teaser_section_carrousel-block_1{
-    margin:0 auto;
+
+.field--name-field-image-de-fond {
+    text-align:center;
+    background:#4a6896;
+    img{
+        opacity:0.3;
+        width:100%;
+    }
+}
+
+.field--name-field-presentation-generale{
+    position:relative;
+    top: -652px;
+    margin-left:262px;
+    margin-right:290px;
+    text-align:center;
+    color:white;
+    font-size:25px;
+    line-height: 35px;
+
+}
+.field--name-field-acces-rapide{
+    position:relative;
+    top:-572px;
+    /*    margin-left:262px;*/
+    text-align:center;
+    .field__item{
+        display:inline;
+        a{
+            font: bold 18px Arial;
+            text-decoration: none;
+            background-color: #EEEEEE;
+            color: #1f497d;
+            padding: 10px 80px 25px 100px;
+            border-top: 1px solid #CCCCCC;
+            border-right: 1px solid #333333;
+            border-bottom: 1px solid #333333;
+            border-left: 1px solid #CCCCCC;
+            margin-right:35px;
+        }
+    }
+}
+.view-display-id-block_1{
+    /*    background:red;*/
+    #views_slideshow_cycle_main_carrousel-block_1{
+        position:relative;
+        top: -510px;
+
+        #views_slideshow_cycle_teaser_section_carrousel-block_1{
+            margin:0 auto;
+
+            img {
+                border-top: 33px solid white;
+                border-left: 45px solid white;
+                border-right: 45px solid white;
+            }
+        }
+    }
+    .views-slideshow-controls-bottom{
+        #widget_pager_bottom_carrousel-block_1{
+            .views-field-counter{
+                background:pink;
+                width:120px;
+                margin:0;
+                .views-content-counter{
+                    background:brown;
+                    display:inline-block;
+                }
+
+            }
+
+
+        }
+    }
+}
+
+#block-views-block-avis-block-1{
+    /*    background:red;*/
+    .view-content{
+        .views-row{
+            article{
+                background: url(../images/vintage.png);
+                height:217px;
+                width:518px;
+            }
+            .field--name-field-date-de-publication{
+                font-size: 25px;
+                color:#C00000;
+                font-family: 'Open Sans', sans-serif;
+            }
+            a{
+                text-decoration:none;
+                .field--name-title {
+                    font-family: SourceSerifPro-Semibold;
+                    font-size:40px;
+                }
+            }
+        }
+    }
+    .view-display-id-block_2{
+        margin:0 auto;
+        float:right;
+        height:489px;
+        width:523px;
+        .field--name-field-date-audition{
+            font-size: 25px;
+            color:#C00000;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+}
+
+#block-views-block-nos-activites-block-1{
+    .view-nos-activites{
+        display:inline-block;
+        background:blue;
+    }
 
 }
