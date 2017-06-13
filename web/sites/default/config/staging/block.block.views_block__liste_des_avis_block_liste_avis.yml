@@ -1,0 +1,30 @@
+uuid: 7296730c-1f50-4be8-a856-5a72aee304af
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.liste_des_avis
+  module:
+    - system
+    - views
+  theme:
+    - project
+id: views_block__liste_des_avis_block_liste_avis
+theme: project
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:liste_des_avis-block_liste_avis'
+settings:
+  id: 'views_block:liste_des_avis-block_liste_avis'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /liste-avis
+    negate: false
+    context_mapping: {  }

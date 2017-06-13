@@ -1,0 +1,25 @@
+uuid: 9125f3d7-742e-44a9-bf65-c79abbf28f0d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - project
+id: pagetitle
+theme: project
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: "/rapports-activite\r\n/auditions-interventions\r\n/liste-avis\r\n/contact"
+    negate: false
+    context_mapping: {  }

@@ -1,4 +1,4 @@
-uuid: 16f485ce-868b-486e-88ba-3c1519f29216
+uuid: cb1fdfe0-ae73-4a84-82ec-e8114d434a4b
 langcode: fr
 status: true
 dependencies:
@@ -11,7 +11,7 @@ id: node.publications.field_date_de_publication
 field_name: field_date_de_publication
 entity_type: node
 bundle: publications
-label: 'Date de publication'
+label: 'Date de publication du document'
 description: ''
 required: true
 translatable: true

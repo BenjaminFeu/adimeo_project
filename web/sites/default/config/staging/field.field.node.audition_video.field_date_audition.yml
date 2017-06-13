@@ -1,0 +1,21 @@
+uuid: fe3410e7-f3ea-4847-8aca-981a0b2e2163
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_audition
+    - node.type.audition_video
+  module:
+    - datetime
+id: node.audition_video.field_date_audition
+field_name: field_date_audition
+entity_type: node
+bundle: audition_video
+label: 'Date de l''audition'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

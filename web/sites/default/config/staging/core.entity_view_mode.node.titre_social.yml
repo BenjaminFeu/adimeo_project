@@ -1,0 +1,10 @@
+uuid: 00aa49e8-9325-4b0a-a870-cf1ad0ede90e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.titre_social
+label: 'Titre social'
+targetEntityType: node
+cache: true

@@ -1,4 +1,4 @@
-uuid: beccc407-1164-47e3-b2bd-93f13d4edf60
+uuid: 0053ac3c-be1b-44c7-8085-77b93891647c
 langcode: fr
 status: true
 dependencies:
@@ -8,7 +8,7 @@ id: node.audition_video.title
 field_name: title
 entity_type: node
 bundle: audition_video
-label: 'Audition vidéo'
+label: 'Liste des auditions et interventions média'
 description: ''
 required: true
 translatable: true

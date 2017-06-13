@@ -1,48 +1,94 @@
-uuid: 1b44ebd5-e18e-48d0-8c05-1ffce1948369
+uuid: 775570b3-85ed-4452-87b7-df6faf6949b0
 langcode: fr
 status: true
 dependencies:
   config:
     - field.field.node.intervention_media.body
-    - field.field.node.intervention_media.field_date_de_l_intervention
-    - field.field.node.intervention_media.field_titre_commun
+    - field.field.node.intervention_media.field_date_de_publication
     - field.field.node.intervention_media.field_video_intervention
     - node.type.intervention_media
   module:
     - datetime
+    - path
     - text
-    - video_embed_field
+    - video
 id: node.intervention_media.default
 targetEntityType: node
 bundle: intervention_media
 mode: default
 content:
-  field_date_de_l_intervention:
-    weight: 1
+  body:
+    type: text_textarea_with_summary
+    weight: 31
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date_de_publication:
+    weight: 32
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_titre_commun:
-    weight: 0
+  field_video_intervention:
+    weight: 33
+    settings:
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      allowed_providers:
+        youtube: youtube
+      uri_scheme: public
+    third_party_settings: {  }
+    type: video_embed
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     region: content
-  field_video_intervention:
-    weight: 2
-    settings: {  }
     third_party_settings: {  }
-    type: video_embed_field_textfield
-    region: content
-hidden:
-  body: true
-  created: true
-  langcode: true
-  path: true
-  promote: true
-  sticky: true
-  title: true
-  uid: true
+hidden: {  }

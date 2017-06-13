@@ -6,18 +6,16 @@ dependencies:
     - field.field.node.accueil_.body
     - field.field.node.accueil_.field_acces_rapide
     - field.field.node.accueil_.field_affichage_presentation
+    - field.field.node.accueil_.field_audition
     - field.field.node.accueil_.field_carrousel
-    - field.field.node.accueil_.field_image_fond
+    - field.field.node.accueil_.field_image_de_fond
     - field.field.node.accueil_.field_nos_activites
-    - field.field.node.accueil_.field_pres_generale
+    - field.field.node.accueil_.field_nos_actualites
+    - field.field.node.accueil_.field_presentation_generale
     - node.type.accueil_
-    - views.view.activites
   module:
-    - image
     - link
-    - text
     - user
-    - views_field_formatter
 id: node.accueil_.default
 targetEntityType: node
 bundle: accueil_
@@ -35,77 +33,28 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_affichage_presentation:
+  field_image_de_fond:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: image_fond
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_presentation_generale:
     weight: 1
     label: hidden
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
-  field_carrousel:
-    weight: 5
-    label: hidden
-    settings:
-      view: 'carrousel::block_1'
-      arguments:
-        field_value:
-          checked: '1'
-          weight: '0'
-        entity_id:
-          checked: '1'
-          weight: '0'
-        delta:
-          checked: '1'
-          weight: '0'
-      implode_character: ''
-      multiple: 0
-    third_party_settings: {  }
-    type: views_field_formatter
-    region: content
-  field_image_fond:
-    weight: 3
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
-  field_nos_activites:
-    weight: 6
-    label: hidden
-    settings:
-      view: 'activites::block_1'
-      arguments:
-        field_value:
-          checked: '1'
-          weight: '0'
-        entity_id:
-          checked: '1'
-          weight: '0'
-        delta:
-          checked: '1'
-          weight: '0'
-      implode_character: ''
-      multiple: 0
-    third_party_settings: {  }
-    type: views_field_formatter
-    region: content
-  field_pres_generale:
-    weight: 4
-    label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: basic_string
     region: content
-  links:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   body: true
+  field_affichage_presentation: true
+  field_audition: true
+  field_carrousel: true
+  field_nos_activites: true
+  field_nos_actualites: true
   langcode: true
+  links: true

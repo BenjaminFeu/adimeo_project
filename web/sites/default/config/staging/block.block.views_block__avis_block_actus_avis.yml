@@ -1,0 +1,30 @@
+uuid: 66bbcfa8-2c72-4143-9028-276ad0c15e44
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.avis
+  module:
+    - system
+    - views
+  theme:
+    - project
+id: views_block__avis_block_actus_avis
+theme: project
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:avis-block_actus_avis'
+settings:
+  id: 'views_block:avis-block_actus_avis'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

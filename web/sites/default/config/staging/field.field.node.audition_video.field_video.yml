@@ -1,4 +1,4 @@
-uuid: 1525a93a-db6f-4539-a417-c8651e7d2b92
+uuid: e48ef9b0-c9a5-48a4-b350-a6ced7c8b334
 langcode: fr
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - field.storage.node.field_video
     - node.type.audition_video
   module:
-    - video_embed_field
+    - video
 id: node.audition_video.field_video
 field_name: field_video
 entity_type: node
@@ -18,8 +18,9 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  allowed_providers:
-    youtube: youtube
-    vimeo: '0'
-    youtube_playlist: '0'
-field_type: video_embed_field
+  file_extensions: ''
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: video

@@ -1,0 +1,32 @@
+uuid: 534be1b2-2dbc-4e4f-a207-13f5ed66c662
+langcode: fr
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.media.vignette
+    - field.field.media.document.field_file
+    - field.field.media.document.field_mime_type
+    - field.field.media.document.field_size
+    - media_entity.bundle.document
+  module:
+    - file
+id: media.document.vignette
+targetEntityType: media
+bundle: document
+mode: vignette
+content:
+  field_file:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  created: true
+  field_mime_type: true
+  field_size: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

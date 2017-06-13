@@ -1,0 +1,17 @@
+uuid: ba28cf0a-b541-4af3-90b9-c553678e0aaf
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Rapport activité'
+type: rapport_activite
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

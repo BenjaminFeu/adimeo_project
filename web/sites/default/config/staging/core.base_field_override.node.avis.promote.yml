@@ -1,0 +1,22 @@
+uuid: 7a4e5c35-b857-4b44-91d3-9b475de393f5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.avis
+id: node.avis.promote
+field_name: promote
+entity_type: node
+bundle: avis
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

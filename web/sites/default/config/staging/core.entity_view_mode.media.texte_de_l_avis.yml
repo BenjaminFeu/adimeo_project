@@ -1,0 +1,10 @@
+uuid: 3109f447-d3b9-4544-9551-3cb80d76e0b5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.texte_de_l_avis
+label: 'Texte de l''avis'
+targetEntityType: media
+cache: true

@@ -1,0 +1,28 @@
+uuid: 4c957e9e-0e46-46d0-9eef-62cfa60ad3c9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fichier_pdf_du_document
+    - media_entity.bundle.document
+    - node.type.publications
+id: node.publications.field_fichier_pdf_du_document
+field_name: field_fichier_pdf_du_document
+entity_type: node
+bundle: publications
+label: 'Fichier pdf du document'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

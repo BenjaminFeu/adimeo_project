@@ -1,0 +1,21 @@
+uuid: 0fbd8866-2633-47eb-93da-2edd937b4cdd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_de_publication
+    - node.type.intervention_media
+  module:
+    - datetime
+id: node.intervention_media.field_date_de_publication
+field_name: field_date_de_publication
+entity_type: node
+bundle: intervention_media
+label: 'Date de l''intervention'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,21 @@
+uuid: 43bd9a51-0d02-45c2-b773-746f41fde8af
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rapport_synthese
+    - node.type.rapport_activite
+  module:
+    - text
+id: node.rapport_activite.field_rapport_synthese
+field_name: field_rapport_synthese
+entity_type: node
+bundle: rapport_activite
+label: Synthèse
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

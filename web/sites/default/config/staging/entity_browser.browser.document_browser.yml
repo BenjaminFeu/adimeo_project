@@ -1,0 +1,29 @@
+uuid: 18da18e7-5f89-43c1-a026-f36ba25ebc83
+langcode: fr
+status: true
+dependencies:
+  module:
+    - entity_browser_entity_form
+name: document_browser
+label: 'Document browser'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Ajouter un document'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  db792ac0-291d-4b3d-bd08-da4c28000b8a:
+    settings:
+      entity_type: media
+      bundle: document
+      form_mode: default
+      submit_text: 'Save entity'
+    uuid: db792ac0-291d-4b3d-bd08-da4c28000b8a
+    weight: 1
+    label: 'Ajouter un nouveau document'
+    id: entity_form

@@ -1,51 +1,61 @@
-uuid: e5908297-9180-4274-8339-2ac39b184d6c
+uuid: 9953aef0-be31-464b-bd4f-79406d7bb965
 langcode: fr
 status: true
 dependencies:
   config:
+    - entity_browser.browser.document_browser
     - field.field.node.audition_video.body
-    - field.field.node.audition_video.field_date_de_l_audition
-    - field.field.node.audition_video.field_document
-    - field.field.node.audition_video.field_titre_commun
+    - field.field.node.audition_video.field_date_audition
+    - field.field.node.audition_video.field_document_s_joint_s_
     - field.field.node.audition_video.field_video
     - node.type.audition_video
   module:
     - datetime
-    - file
-    - text
-    - video_embed_field
+    - entity_browser
+    - video
 id: node.audition_video.default
 targetEntityType: node
 bundle: audition_video
 mode: default
 content:
-  field_date_de_l_audition:
+  field_date_audition:
     weight: 1
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_document:
+  field_document_s_joint_s_:
     weight: 2
     settings:
-      progress_indicator: throbber
+      entity_browser: document_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: default
+      open: false
     third_party_settings: {  }
-    type: file_generic
+    type: entity_browser_entity_reference
     region: content
-  field_titre_commun:
+  field_video:
+    weight: 26
+    settings:
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      allowed_providers:
+        youtube: youtube
+      uri_scheme: public
+    third_party_settings: {  }
+    type: video_embed
+    region: content
+  title:
+    type: string_textfield
     weight: 0
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
-    region: content
-  field_video:
-    weight: 26
-    settings: {  }
-    third_party_settings: {  }
-    type: video_embed_field_textfield
-    region: content
 hidden:
   body: true
   created: true
@@ -53,5 +63,4 @@ hidden:
   path: true
   promote: true
   sticky: true
-  title: true
   uid: true

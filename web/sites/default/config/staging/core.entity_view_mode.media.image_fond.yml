@@ -1,0 +1,10 @@
+uuid: 0c5ca9ee-95a3-4107-80df-522168363002
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.image_fond
+label: 'Image fond'
+targetEntityType: media
+cache: true

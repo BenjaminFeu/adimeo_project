@@ -1,0 +1,28 @@
+uuid: 167a8b42-ab6c-4e33-ba83-823a478a990f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categorie_de_la_publicatio
+    - node.type.publications
+    - taxonomy.vocabulary.categorie_de_publication
+id: node.publications.field_categorie_de_la_publicatio
+field_name: field_categorie_de_la_publicatio
+entity_type: node
+bundle: publications
+label: 'Catégorie de la publication'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categorie_de_publication: categorie_de_publication
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 8ab8f77c-c318-464d-a559-5878cc2276da
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.intervention_media
+id: node.intervention_media.promote
+field_name: promote
+entity_type: node
+bundle: intervention_media
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

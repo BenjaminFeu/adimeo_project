@@ -1,0 +1,28 @@
+uuid: 50ddaaab-cb61-4927-9dae-04f4259a60d9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document_s_joint_s_
+    - media_entity.bundle.document
+    - node.type.audition_video
+id: node.audition_video.field_document_s_joint_s_
+field_name: field_document_s_joint_s_
+entity_type: node
+bundle: audition_video
+label: 'Document(s) joint(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

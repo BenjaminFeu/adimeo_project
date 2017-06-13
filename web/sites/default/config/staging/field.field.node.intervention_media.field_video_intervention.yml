@@ -1,4 +1,4 @@
-uuid: 1a2a244f-70ea-48f8-a952-13708c04b3c7
+uuid: d9af8132-554b-495f-851b-88d6f16997f5
 langcode: fr
 status: true
 dependencies:
@@ -6,20 +6,21 @@ dependencies:
     - field.storage.node.field_video_intervention
     - node.type.intervention_media
   module:
-    - video_embed_field
+    - video
 id: node.intervention_media.field_video_intervention
 field_name: field_video_intervention
 entity_type: node
 bundle: intervention_media
-label: 'Vidéo intervention'
+label: Vidéo
 description: ''
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  allowed_providers:
-    youtube: youtube
-    vimeo: '0'
-    youtube_playlist: '0'
-field_type: video_embed_field
+  file_extensions: ''
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: video

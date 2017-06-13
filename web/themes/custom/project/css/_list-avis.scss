@@ -1,0 +1,81 @@
+#block-pagetitle{
+    font-size: 40px;
+    color: #1F497D;
+    font-family: 'Source Serif Pro', serif;
+}
+
+#block-project-content{
+    .view-liste-des-avis{
+        .view-content{
+            float:left;
+            h3{
+
+                color: #1F497D;
+
+            }
+            h3::before{
+                content: ">";
+                color:#1F497D;
+                height:1px;
+            }
+            .views-row{
+                a{
+                    text-decoration:none;
+                    color:black;
+                }
+            }
+        }
+
+    }
+
+}
+.view-display-id-block_liste_avis{
+    background:red;
+    .view-content{
+        float:right;
+        h3{
+            a{
+                text-decoration:none;
+                color: #1F497D;
+            }
+        }
+        h3::before{
+            content: ">";
+            color:#1F497D;
+            height:1px;
+        }
+        .views-row{
+            a{
+                text-decoration:none;
+                color:black;
+            }
+        }
+    }
+}
+
+/*.list_avis_1{
+    position: relative;
+    top: -24px;
+    right: 58px;
+    .list_avis_1::first-child{
+        background:red;
+        color: #C00000;
+        font-size:40px;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align:center;
+
+    }
+}*/
+
+/*.list_avis_2{
+    position: relative;
+    left: 800px;
+    top: -71px;
+    .list_avis_2::first-child{
+        background:red;
+        color: #C00000;
+        font-size:40px;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align:center;
+    }
+}*/

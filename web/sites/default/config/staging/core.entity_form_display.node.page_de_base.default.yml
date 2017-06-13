@@ -1,10 +1,10 @@
-uuid: e3c387fc-9b94-4efe-8c6a-8015c3cca57e
+uuid: 94421ea5-dcc1-4c43-b845-61164a887061
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.page_de_base.field_corps_de_texte
-    - field.field.node.page_de_base.field_titre_commun
+    - field.field.node.page_de_base.body
+    - field.field.node.page_de_base.field_corps_texte
     - node.type.page_de_base
   module:
     - path
@@ -14,27 +14,28 @@ targetEntityType: node
 bundle: page_de_base
 mode: default
 content:
+  body:
+    type: text_textarea_with_summary
+    weight: 31
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_corps_de_texte:
+  field_corps_texte:
     weight: 32
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
-    region: content
-  field_titre_commun:
-    weight: 31
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
+    type: text_textarea
     region: content
   langcode:
     type: language_select

@@ -1,0 +1,32 @@
+uuid: 50f67e06-8f15-4e67-a1d7-3698fbb69867
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.texte_de_l_avis
+    - field.field.media.document.field_file
+    - field.field.media.document.field_mime_type
+    - field.field.media.document.field_size
+    - media_entity.bundle.document
+  module:
+    - file
+id: media.document.texte_de_l_avis
+targetEntityType: media
+bundle: document
+mode: texte_de_l_avis
+content:
+  field_file:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  created: true
+  field_mime_type: true
+  field_size: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

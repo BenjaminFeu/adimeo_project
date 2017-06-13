@@ -1,0 +1,57 @@
+uuid: 94a30c24-bd34-4f47-baad-f77e7114e769
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.rapport_activite.body
+    - field.field.node.rapport_activite.field_date_de_publication
+    - field.field.node.rapport_activite.field_image_rapport
+    - field.field.node.rapport_activite.field_pdf_rapport
+    - field.field.node.rapport_activite.field_rapport_synthese
+    - node.type.rapport_activite
+  module:
+    - datetime
+    - text
+    - user
+id: node.rapport_activite.default
+targetEntityType: node
+bundle: rapport_activite
+mode: default
+content:
+  field_date_de_publication:
+    weight: 0
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: date_project
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_image_rapport:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_pdf_rapport:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_rapport_synthese:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  body: true
+  langcode: true
+  links: true

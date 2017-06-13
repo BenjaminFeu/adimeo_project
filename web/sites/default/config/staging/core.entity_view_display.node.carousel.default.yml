@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.carousel.field_image_carou
     - field.field.node.carousel.field_lien
+    - image.style.image_carrousel
     - node.type.carousel
   module:
     - image
@@ -17,16 +18,16 @@ mode: default
 content:
   field_image_carou:
     weight: 102
-    label: above
+    label: hidden
     settings:
-      image_style: ''
+      image_style: image_carrousel
       image_link: ''
     third_party_settings: {  }
     type: image
     region: content
   field_lien:
     weight: 103
-    label: above
+    label: hidden
     settings:
       responsive: true
       width: 854
@@ -38,5 +39,7 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true

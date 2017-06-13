@@ -1,0 +1,10 @@
+uuid: 112a5447-ce14-403f-8b79-dd686fb3c215
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.liste_avis
+label: 'Liste avis'
+targetEntityType: node
+cache: true

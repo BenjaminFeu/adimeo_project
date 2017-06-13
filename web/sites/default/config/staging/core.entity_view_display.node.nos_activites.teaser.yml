@@ -5,25 +5,41 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.nos_activites.body
+    - field.field.node.nos_activites.field_icone
+    - field.field.node.nos_activites.field_lien_activ
+    - image.style.thumbnail
     - node.type.nos_activites
   module:
-    - text
+    - image
+    - link
     - user
 id: node.nos_activites.teaser
 targetEntityType: node
 bundle: nos_activites
 mode: teaser
 content:
-  body:
+  field_icone:
+    type: image
+    weight: 0
+    region: content
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
     settings:
-      trim_length: 600
+      image_style: thumbnail
+      image_link: ''
     third_party_settings: {  }
+  field_lien_activ:
+    type: link
+    weight: 1
     region: content
-  links:
-    weight: 100
-    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
 hidden:
+  body: true
   langcode: true
+  links: true

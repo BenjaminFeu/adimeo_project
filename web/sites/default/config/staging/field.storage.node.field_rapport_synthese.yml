@@ -1,0 +1,19 @@
+uuid: 28c03e44-664e-4c2e-8b5a-b3066ff714bc
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_rapport_synthese
+field_name: field_rapport_synthese
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

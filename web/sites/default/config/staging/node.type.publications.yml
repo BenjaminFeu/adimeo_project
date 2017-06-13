@@ -1,4 +1,4 @@
-uuid: 7b3e6ba1-d8e7-4e07-be7e-a5b2c7a73a51
+uuid: ca1bd860-5590-49e4-bc6a-a9bc05dac877
 langcode: fr
 status: true
 dependencies:
@@ -6,13 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 name: Publications
 type: publications
 description: ''
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false

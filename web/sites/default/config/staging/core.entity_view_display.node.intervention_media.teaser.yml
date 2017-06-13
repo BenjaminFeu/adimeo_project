@@ -1,10 +1,12 @@
-uuid: da5f186a-9304-4f1f-84df-30924d9b1643
+uuid: 0e854853-88c6-423c-8c36-5ae4eb805dc6
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.intervention_media.body
+    - field.field.node.intervention_media.field_date_de_publication
+    - field.field.node.intervention_media.field_video_intervention
     - node.type.intervention_media
   module:
     - text
@@ -26,4 +28,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_date_de_publication: true
+  field_video_intervention: true
   langcode: true

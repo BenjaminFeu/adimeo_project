@@ -1,10 +1,12 @@
-uuid: 0e88531a-0550-4b90-99b8-10e01cf68627
+uuid: 15e96117-6ae9-460b-810d-619d41ecdb9d
 langcode: fr
 status: true
 dependencies:
   config:
     - field.storage.node.field_synthese
     - node.type.publications
+  module:
+    - text
 id: node.publications.field_synthese
 field_name: field_synthese
 entity_type: node
@@ -12,8 +14,8 @@ bundle: publications
 label: Synthèse
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string_long
+field_type: text_long

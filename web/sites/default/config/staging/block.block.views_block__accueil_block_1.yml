@@ -1,0 +1,30 @@
+uuid: 58a1505a-e307-445b-a238-2f56088a2af1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.accueil
+  module:
+    - system
+    - views
+  theme:
+    - project
+id: views_block__accueil_block_1
+theme: project
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:accueil-block_1'
+settings:
+  id: 'views_block:accueil-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

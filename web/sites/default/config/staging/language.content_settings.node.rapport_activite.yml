@@ -1,0 +1,11 @@
+uuid: b4cd0bec-895b-4d0c-9860-ebdfbc39016c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.rapport_activite
+id: node.rapport_activite
+target_entity_type_id: node
+target_bundle: rapport_activite
+default_langcode: site_default
+language_alterable: false

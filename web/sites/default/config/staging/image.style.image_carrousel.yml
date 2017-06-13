@@ -1,0 +1,14 @@
+uuid: df643a5c-725e-4c8a-9be0-cc79cd2a1f12
+langcode: fr
+status: true
+dependencies: {  }
+name: image_carrousel
+label: image_carrousel
+effects:
+  e6ee3fcd-3e8e-4d38-9966-109f4bb985be:
+    uuid: e6ee3fcd-3e8e-4d38-9966-109f4bb985be
+    id: image_resize
+    weight: 1
+    data:
+      width: 973
+      height: 472

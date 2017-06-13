@@ -1,0 +1,22 @@
+uuid: 746bb94f-7aeb-4621-a42e-fa971dd89038
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.rapport_activite
+  module:
+    - text
+id: node.rapport_activite.body
+field_name: body
+entity_type: node
+bundle: rapport_activite
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

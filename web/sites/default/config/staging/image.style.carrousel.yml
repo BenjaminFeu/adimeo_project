@@ -1,0 +1,14 @@
+uuid: d9b2df35-4ef7-4a21-b045-df8278dd6bbd
+langcode: fr
+status: true
+dependencies: {  }
+name: carrousel
+label: carrousel
+effects:
+  1ee9c69d-db93-42e3-a223-0645b329db22:
+    uuid: 1ee9c69d-db93-42e3-a223-0645b329db22
+    id: image_resize
+    weight: 1
+    data:
+      width: 973
+      height: 472

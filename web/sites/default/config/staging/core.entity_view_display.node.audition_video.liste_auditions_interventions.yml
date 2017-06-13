@@ -1,0 +1,48 @@
+uuid: 0f8dcbeb-04f7-4511-90a7-f0dec34c973d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.liste_auditions_interventions
+    - field.field.node.audition_video.body
+    - field.field.node.audition_video.field_date_audition
+    - field.field.node.audition_video.field_document_s_joint_s_
+    - field.field.node.audition_video.field_video
+    - node.type.audition_video
+  module:
+    - datetime
+    - user
+    - video
+id: node.audition_video.liste_auditions_interventions
+targetEntityType: node
+bundle: audition_video
+mode: liste_auditions_interventions
+content:
+  field_date_audition:
+    weight: 1
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: date_project
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_video:
+    weight: 2
+    label: hidden
+    settings:
+      width: '450'
+      height: '350'
+      autoplay: false
+    third_party_settings: {  }
+    type: video_embed_player
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_document_s_joint_s_: true
+  langcode: true

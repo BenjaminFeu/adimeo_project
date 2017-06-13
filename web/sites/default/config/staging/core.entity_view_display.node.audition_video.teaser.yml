@@ -1,29 +1,44 @@
-uuid: 9c8a62e6-ca0e-4da1-9d67-22c3e79a68dd
+uuid: 7a173e99-1fc8-40d2-9a63-e7af29136649
 langcode: fr
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.audition_video.body
+    - field.field.node.audition_video.field_date_audition
+    - field.field.node.audition_video.field_document_s_joint_s_
+    - field.field.node.audition_video.field_video
     - node.type.audition_video
   module:
-    - text
+    - datetime
     - user
+    - video
 id: node.audition_video.teaser
 targetEntityType: node
 bundle: audition_video
 mode: teaser
 content:
-  body:
+  field_date_audition:
+    type: datetime_default
+    weight: 0
+    region: content
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
     settings:
-      trim_length: 600
+      timezone_override: ''
+      format_type: date_project
     third_party_settings: {  }
+  field_video:
+    type: video_embed_player
+    weight: 1
     region: content
-  links:
-    weight: 100
-    region: content
+    label: hidden
+    settings:
+      width: '410'
+      height: '200'
+      autoplay: false
+    third_party_settings: {  }
 hidden:
+  body: true
+  field_document_s_joint_s_: true
   langcode: true
+  links: true

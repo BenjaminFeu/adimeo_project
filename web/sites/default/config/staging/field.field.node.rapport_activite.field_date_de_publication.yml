@@ -1,0 +1,21 @@
+uuid: 31184e70-9630-4121-a6da-26ccefe85fb7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_de_publication
+    - node.type.rapport_activite
+  module:
+    - datetime
+id: node.rapport_activite.field_date_de_publication
+field_name: field_date_de_publication
+entity_type: node
+bundle: rapport_activite
+label: 'Date de publication'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

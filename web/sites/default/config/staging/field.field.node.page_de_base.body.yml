@@ -1,0 +1,22 @@
+uuid: eae32099-64ab-465e-9fe6-db0e66af7503
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.page_de_base
+  module:
+    - text
+id: node.page_de_base.body
+field_name: body
+entity_type: node
+bundle: page_de_base
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

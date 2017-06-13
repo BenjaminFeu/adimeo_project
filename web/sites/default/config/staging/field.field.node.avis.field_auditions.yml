@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_auditions
-    - node.type.audition_video
     - node.type.avis
 id: node.avis.field_auditions
 field_name: field_auditions
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:node'
   handler_settings:
-    target_bundles:
-      audition_video: audition_video
+    target_bundles: {  }
     sort:
       field: _none
     auto_create: false

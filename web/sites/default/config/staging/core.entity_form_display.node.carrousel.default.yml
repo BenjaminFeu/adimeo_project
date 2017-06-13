@@ -1,0 +1,54 @@
+uuid: 425b5fc1-49da-4ca6-ab60-ecc41c5e8fec
+langcode: fr
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.image_browser
+    - field.field.node.carrousel.body
+    - field.field.node.carrousel.field_image_carrousel
+    - field.field.node.carrousel.field_lien_carrousel
+    - node.type.carrousel
+  module:
+    - entity_browser
+    - video_embed_field
+id: node.carrousel.default
+targetEntityType: node
+bundle: carrousel
+mode: default
+content:
+  field_image_carrousel:
+    weight: 1
+    settings:
+      entity_browser: image_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: default
+      open: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_lien_carrousel:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

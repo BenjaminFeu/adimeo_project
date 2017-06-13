@@ -1,0 +1,20 @@
+uuid: 8542315e-5d54-4e87-bf86-fa962dc33e88
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media_entity
+    - node
+id: node.field_fichier_pdf_du_document
+field_name: field_fichier_pdf_du_document
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+uuid: 484bb190-dd91-4f70-8437-d6d759284727
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.liste_auditions_interventions
+label: 'Liste auditions et interventions'
+targetEntityType: node
+cache: true

@@ -1,0 +1,28 @@
+uuid: 813b7d70-e789-40a4-b0d2-3431761e8913
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_document_avis
+    - media_entity.bundle.document
+    - node.type.avis
+id: node.avis.field_document_avis
+field_name: field_document_avis
+entity_type: node
+bundle: avis
+label: 'Document(s) lié(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

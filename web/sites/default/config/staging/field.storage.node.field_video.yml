@@ -1,16 +1,24 @@
-uuid: 090c7bb3-f4f5-43fa-8c92-127e006343c6
+uuid: d33bd8b3-66b0-4d32-9ed4-47ceaff5081c
 langcode: fr
 status: true
 dependencies:
   module:
+    - file
     - node
-    - video_embed_field
+    - video
 id: node.field_video
 field_name: field_video
 entity_type: node
-type: video_embed_field
-settings: {  }
-module: video_embed_field
+type: video
+settings:
+  default_video:
+    uuid: null
+    data: null
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: video
 locked: false
 cardinality: 1
 translatable: true

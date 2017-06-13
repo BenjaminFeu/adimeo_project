@@ -3,26 +3,27 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - entity_browser.browser.image_browser
     - field.field.node.accueil_.body
     - field.field.node.accueil_.field_acces_rapide
     - field.field.node.accueil_.field_affichage_presentation
+    - field.field.node.accueil_.field_audition
     - field.field.node.accueil_.field_carrousel
-    - field.field.node.accueil_.field_image_fond
+    - field.field.node.accueil_.field_image_de_fond
     - field.field.node.accueil_.field_nos_activites
-    - field.field.node.accueil_.field_pres_generale
-    - image.style.thumbnail
+    - field.field.node.accueil_.field_nos_actualites
+    - field.field.node.accueil_.field_presentation_generale
     - node.type.accueil_
   module:
-    - image
+    - entity_browser
     - link
-    - text
 id: node.accueil_.default
 targetEntityType: node
 bundle: accueil_
 mode: default
 content:
   field_acces_rapide:
-    weight: 2
+    weight: 4
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -36,7 +37,21 @@ content:
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_carrousel:
+  field_image_de_fond:
+    weight: 3
+    settings:
+      entity_browser: image_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: media
+      open: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_nos_activites:
     weight: 5
     settings:
       match_operator: CONTAINS
@@ -45,30 +60,13 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_image_fond:
-    weight: 3
+  field_presentation_generale:
+    weight: 2
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_nos_activites:
-    weight: 6
-    settings:
-      match_operator: CONTAINS
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_pres_generale:
-    weight: 4
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
+    type: string_textarea
     region: content
   title:
     type: string_textfield
@@ -81,6 +79,9 @@ content:
 hidden:
   body: true
   created: true
+  field_audition: true
+  field_carrousel: true
+  field_nos_actualites: true
   langcode: true
   path: true
   promote: true

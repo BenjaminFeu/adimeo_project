@@ -1,0 +1,51 @@
+uuid: 2cd4c0b2-161f-459a-9f2a-8be279b40b82
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.liste_avis
+    - field.field.node.avis.body
+    - field.field.node.avis.field_auditions
+    - field.field.node.avis.field_chapo
+    - field.field.node.avis.field_date_de_publication
+    - field.field.node.avis.field_document_avis
+    - field.field.node.avis.field_intervention
+    - field.field.node.avis.field_resume_de_l_avis
+    - field.field.node.avis.field_sujet
+    - field.field.node.avis.field_texte_avis
+    - node.type.avis
+  module:
+    - datetime
+    - user
+id: node.avis.liste_avis
+targetEntityType: node
+bundle: avis
+mode: liste_avis
+content:
+  field_date_de_publication:
+    type: datetime_default
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: date_project
+    third_party_settings: {  }
+  field_texte_avis:
+    type: entity_reference_label
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_auditions: true
+  field_chapo: true
+  field_document_avis: true
+  field_intervention: true
+  field_resume_de_l_avis: true
+  field_sujet: true
+  langcode: true
+  links: true

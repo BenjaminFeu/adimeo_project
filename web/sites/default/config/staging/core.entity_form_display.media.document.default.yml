@@ -15,23 +15,16 @@ bundle: document
 mode: default
 content:
   field_file:
-    weight: 1
+    weight: 0
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
-  name:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
 hidden:
   created: true
   field_mime_type: true
   field_size: true
   langcode: true
+  name: true
   uid: true

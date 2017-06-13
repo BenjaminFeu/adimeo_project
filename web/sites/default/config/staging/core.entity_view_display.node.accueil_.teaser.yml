@@ -5,25 +5,57 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.accueil_.body
+    - field.field.node.accueil_.field_acces_rapide
+    - field.field.node.accueil_.field_affichage_presentation
+    - field.field.node.accueil_.field_audition
+    - field.field.node.accueil_.field_carrousel
+    - field.field.node.accueil_.field_image_de_fond
+    - field.field.node.accueil_.field_nos_activites
+    - field.field.node.accueil_.field_nos_actualites
+    - field.field.node.accueil_.field_presentation_generale
     - node.type.accueil_
   module:
-    - text
+    - link
     - user
 id: node.accueil_.teaser
 targetEntityType: node
 bundle: accueil_
 mode: teaser
 content:
-  body:
+  field_acces_rapide:
+    type: link
+    weight: 2
+    region: content
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
     settings:
-      trim_length: 600
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
+  field_image_de_fond:
+    type: entity_reference_entity_view
+    weight: 0
     region: content
-  links:
-    weight: 100
+    label: hidden
+    settings:
+      view_mode: image_fond
+      link: false
+    third_party_settings: {  }
+  field_presentation_generale:
+    type: basic_string
+    weight: 1
     region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  body: true
+  field_affichage_presentation: true
+  field_audition: true
+  field_carrousel: true
+  field_nos_activites: true
+  field_nos_actualites: true
   langcode: true
+  links: true

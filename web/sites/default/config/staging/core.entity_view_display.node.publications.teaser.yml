@@ -1,12 +1,18 @@
-uuid: 177216d5-a372-4703-99b6-cbce793bd1ab
+uuid: 01ae5e08-3774-4a74-aa6c-048e285a0dbd
 langcode: fr
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.publications.body
+    - field.field.node.publications.field_categorie_de_la_publicatio
+    - field.field.node.publications.field_chapo
+    - field.field.node.publications.field_date_de_publication
+    - field.field.node.publications.field_fichier_pdf_du_document
+    - field.field.node.publications.field_synthese
     - node.type.publications
   module:
+    - datetime
     - text
     - user
 id: node.publications.teaser
@@ -14,16 +20,33 @@ targetEntityType: node
 bundle: publications
 mode: teaser
 content:
-  body:
+  field_date_de_publication:
+    type: datetime_default
+    weight: 0
+    region: content
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
     settings:
-      trim_length: 600
+      format_type: medium
+      timezone_override: ''
     third_party_settings: {  }
+  field_fichier_pdf_du_document:
+    type: entity_reference_label
+    weight: 1
     region: content
-  links:
-    weight: 100
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_synthese:
+    type: text_default
+    weight: 2
     region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  body: true
+  field_categorie_de_la_publicatio: true
+  field_chapo: true
   langcode: true
+  links: true

@@ -1,0 +1,22 @@
+uuid: d2fe3b36-d7b5-4a20-a813-31f01868a42a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.rapport_activite
+id: node.rapport_activite.promote
+field_name: promote
+entity_type: node
+bundle: rapport_activite
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

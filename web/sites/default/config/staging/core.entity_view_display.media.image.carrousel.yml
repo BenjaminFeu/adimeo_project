@@ -1,0 +1,37 @@
+uuid: 30258183-8e2f-44da-85cd-5b4761df849c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.carrousel
+    - field.field.media.image.field_height
+    - field.field.media.image.field_image
+    - field.field.media.image.field_mime_type_
+    - field.field.media.image.field_width
+    - image.style.carrousel
+    - media_entity.bundle.image
+  module:
+    - image
+id: media.image.carrousel
+targetEntityType: media
+bundle: image
+mode: carrousel
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: carrousel
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_height: true
+  field_mime_type_: true
+  field_width: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

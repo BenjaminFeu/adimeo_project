@@ -1,11 +1,11 @@
-uuid: 841e66d3-a2a8-4380-9271-3d31f461c60d
+uuid: c157c781-9822-4535-9c11-a0e3a22063e1
 langcode: fr
 status: true
 dependencies:
   config:
     - field.storage.node.field_carrousel
     - node.type.accueil_
-    - node.type.carousel
+    - node.type.carrousel
 id: node.accueil_.field_carrousel
 field_name: field_carrousel
 entity_type: node
@@ -20,7 +20,7 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      carousel: carousel
+      carrousel: carrousel
     sort:
       field: _none
     auto_create: false

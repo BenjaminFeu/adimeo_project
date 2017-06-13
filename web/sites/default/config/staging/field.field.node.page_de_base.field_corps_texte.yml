@@ -1,0 +1,21 @@
+uuid: 63911372-7abf-406f-b7c2-9fe71b2fcdc6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_corps_texte
+    - node.type.page_de_base
+  module:
+    - text
+id: node.page_de_base.field_corps_texte
+field_name: field_corps_texte
+entity_type: node
+bundle: page_de_base
+label: 'Corps de texte'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,25 @@
+uuid: ffeba412-528d-4168-93e3-27671530baff
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audition
+    - node.type.accueil_
+  module:
+    - markup
+id: node.accueil_.field_audition
+field_name: field_audition
+entity_type: node
+bundle: accueil_
+label: audition
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings:
+  markup:
+    value: "<p>audition</p>\r\n"
+    format: basic_html
+field_type: markup

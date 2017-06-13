@@ -11,7 +11,7 @@ id: node.avis.field_resume_de_l_avis
 field_name: field_resume_de_l_avis
 entity_type: node
 bundle: avis
-label: 'Résumé de l''avis'
+label: Synthèse
 description: ''
 required: true
 translatable: false

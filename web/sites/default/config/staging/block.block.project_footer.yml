@@ -1,6 +1,6 @@
 uuid: 6ae7031b-50e6-4177-92a3-8255c5da549f
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -12,8 +12,8 @@ _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
 id: project_footer
 theme: project
-region: content
-weight: 0
+region: footer
+weight: -4
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

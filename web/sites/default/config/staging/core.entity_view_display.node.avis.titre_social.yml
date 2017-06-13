@@ -1,0 +1,35 @@
+uuid: b2a6cf17-7ca5-4d93-bbcf-f9cf82d971ef
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.titre_social
+    - field.field.node.avis.body
+    - field.field.node.avis.field_auditions
+    - field.field.node.avis.field_chapo
+    - field.field.node.avis.field_date_de_publication
+    - field.field.node.avis.field_document_avis
+    - field.field.node.avis.field_intervention
+    - field.field.node.avis.field_resume_de_l_avis
+    - field.field.node.avis.field_sujet
+    - field.field.node.avis.field_texte_avis
+    - node.type.avis
+  module:
+    - user
+id: node.avis.titre_social
+targetEntityType: node
+bundle: avis
+mode: titre_social
+content: {  }
+hidden:
+  body: true
+  field_auditions: true
+  field_chapo: true
+  field_date_de_publication: true
+  field_document_avis: true
+  field_intervention: true
+  field_resume_de_l_avis: true
+  field_sujet: true
+  field_texte_avis: true
+  langcode: true
+  links: true

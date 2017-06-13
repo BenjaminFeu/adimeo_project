@@ -1,4 +1,4 @@
-uuid: c514de16-6293-4d5a-935b-e8663bc08ce5
+uuid: 78a673e3-b073-484f-9976-a6c4b2831c14
 langcode: fr
 status: true
 dependencies:
@@ -6,13 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 name: 'Page de base'
 type: page_de_base
 description: ''
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false

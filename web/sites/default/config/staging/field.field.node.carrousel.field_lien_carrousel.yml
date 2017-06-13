@@ -1,0 +1,25 @@
+uuid: 664dfd3a-4210-4d74-a78a-4c938e911353
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lien_carrousel
+    - node.type.carrousel
+  module:
+    - video_embed_field
+id: node.carrousel.field_lien_carrousel
+field_name: field_lien_carrousel
+entity_type: node
+bundle: carrousel
+label: 'Lien carrousel'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: youtube
+    vimeo: vimeo
+    youtube_playlist: youtube_playlist
+field_type: video_embed_field

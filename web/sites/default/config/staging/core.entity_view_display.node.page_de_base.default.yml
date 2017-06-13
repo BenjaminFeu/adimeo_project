@@ -1,10 +1,10 @@
-uuid: ad7fb86e-3c52-47f9-841b-46bd632aca83
+uuid: 0368f3f3-914c-4ee1-926d-5516e6d632d8
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.page_de_base.field_corps_de_texte
-    - field.field.node.page_de_base.field_titre_commun
+    - field.field.node.page_de_base.body
+    - field.field.node.page_de_base.field_corps_texte
     - node.type.page_de_base
   module:
     - text
@@ -14,20 +14,24 @@ targetEntityType: node
 bundle: page_de_base
 mode: default
 content:
-  field_corps_de_texte:
-    weight: 1
-    label: above
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
     region: content
-  field_titre_commun:
-    weight: 0
-    label: above
+  field_corps_texte:
+    weight: 102
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true
-  links: true
