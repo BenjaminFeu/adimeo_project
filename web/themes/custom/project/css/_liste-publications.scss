@@ -1,0 +1,63 @@
+.path-taxonomy{
+    #block-project-content{
+        article{
+            h2{
+                a{
+                    font-family: SourceSansPro-Regular;
+                    font-size:35px;
+                    text-decoration:none;
+                    color: #1F497D;
+                }
+                a::after{
+                    content: "  ";
+                    background: #1F497D;
+                    height: 1px;
+                    width: 100%;
+                    display:block;
+                }
+            }
+            .field--name-field-date-de-publication{
+                /*                background:red;*/
+                font-size: 25px;
+                color:#C00000;
+                font-family: 'Open Sans', sans-serif;
+                float:left;
+                width:20%;
+                margin-top:37px;
+                margin-bottom:40px;
+            }
+
+            .field--name-field-synthese{
+                float:right;
+                max-width:80%;
+                .field__label{
+                    font-size: 25px;
+                    color: #C00000;
+                    font-family: 'Open Sans', sans-serif;
+                    /*                    background: blue;*/
+                    margin-top:43px;
+                }
+                .field__label::after{
+                    content: "  ";
+                    background: #C00000;
+                    height: 1px;
+                    width: 100%;
+                    display:block;
+                }
+
+                p{
+                    margin: 10px auto;
+                }
+
+            }
+            .field--name-field-fichier-pdf-du-document{
+
+                a{
+                    color:red;
+
+                }
+            }
+        }
+    }
+}
+

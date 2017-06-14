@@ -23,6 +23,7 @@
         "drupal/core": "~8.0",
         "drupal/ctools": "^3.0",
         "drupal/devel": "^1.0@RC",
+        "drupal/empty_page": "^1.0",
         "drupal/entity_browser": "^1.0",
         "drupal/inline_entity_form": "^1.0@beta",
         "drupal/markup": "^1.0@beta",

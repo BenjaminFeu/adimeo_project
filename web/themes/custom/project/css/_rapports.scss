@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 14 juin 2017, 10:38:27
+    Author     : coretechs
+*/
+#block-views-block-liste-rapport-activite-block-rapports{
+    .field--name-field-date-de-publication{
+        font-size: 25px;
+        color:#C00000;
+        font-family: 'Open Sans', sans-serif;
+    }
+    a{
+        text-decoration:none;
+        color: #1F497D;
+        .field--name-title {
+            font-family: SourceSansPro-Regular;
+            font-size:35px;
+        }
+    }
+    .field--name-field-rapport-synthese{
+        width:80%;
+        p{
+
+            margin:0;
+            /*            float:right;*/
+        }
+    }
+    .field--name-field-image{
+        float:left;
+        width:20%;
+    }
+    .field--name-field-pdf-rapport{
+        float:right;
+        a{
+            color:red;
+            /*            position: relative;
+                        top: -100px;
+                        left: -646px;*/
+        }
+    }
+}

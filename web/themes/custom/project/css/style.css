@@ -176,33 +176,89 @@ node__content {
   color: #1F497D;
   font-family: 'Source Serif Pro', serif; }
 
-#block-project-content .view-liste-des-avis .view-content {
-  float: left; }
-  #block-project-content .view-liste-des-avis .view-content h3 {
+#block-views-block-liste-avis-block-annee {
+  float: left;
+  width: 50%; }
+  #block-views-block-liste-avis-block-annee h2 {
+    color: #C00000;
+    font-size: 40px;
+    font-family: 'Source Sans Pro', sans-serif; }
+  #block-views-block-liste-avis-block-annee h3 {
     color: #1F497D; }
-  #block-project-content .view-liste-des-avis .view-content h3::before {
+  #block-views-block-liste-avis-block-annee h3::before {
     content: ">";
     color: #1F497D;
     height: 1px; }
-  #block-project-content .view-liste-des-avis .view-content .views-row a {
+  #block-views-block-liste-avis-block-annee .views-row a {
     text-decoration: none;
     color: black; }
 
-.view-display-id-block_liste_avis {
-  background: red; }
-  .view-display-id-block_liste_avis .view-content {
-    float: right; }
-    .view-display-id-block_liste_avis .view-content h3 a {
-      text-decoration: none;
-      color: #1F497D; }
-    .view-display-id-block_liste_avis .view-content h3::before {
-      content: ">";
-      color: #1F497D;
-      height: 1px; }
-    .view-display-id-block_liste_avis .view-content .views-row a {
-      text-decoration: none;
-      color: black; }
+#block-views-block-liste-avis-block-sujet {
+  float: right;
+  width: 50%; }
+  #block-views-block-liste-avis-block-sujet h2 {
+    color: #C00000;
+    font-size: 40px;
+    font-family: 'Source Sans Pro', sans-serif; }
+  #block-views-block-liste-avis-block-sujet h3 a {
+    text-decoration: none;
+    color: #1F497D; }
+  #block-views-block-liste-avis-block-sujet h3::before {
+    content: ">";
+    color: #1F497D;
+    height: 1px; }
+  #block-views-block-liste-avis-block-sujet .views-row a {
+    text-decoration: none;
+    color: black; }
 
+/*#block-project-content{
+    .view-liste-des-avis{
+        .view-content{
+            float:left;
+            h3{
+
+                color: #1F497D;
+
+            }
+            h3::before{
+                content: ">";
+                color:#1F497D;
+                height:1px;
+            }
+            .views-row{
+                a{
+                    text-decoration:none;
+                    color:black;
+                }
+            }
+        }
+
+    }
+
+}
+.view-display-id-block_liste_avis{
+    background:red;
+    .view-content{
+        float:right;
+        h3{
+            a{
+                text-decoration:none;
+                color: #1F497D;
+            }
+        }
+        h3::before{
+            content: ">";
+            color:#1F497D;
+            height:1px;
+        }
+        .views-row{
+            a{
+                text-decoration:none;
+                color:black;
+            }
+        }
+    }
+}*/
 /*.list_avis_1{
     position: relative;
     top: -24px;
@@ -228,5 +284,79 @@ node__content {
         text-align:center;
     }
 }*/
+.path-taxonomy #block-project-content article h2 a {
+  font-family: SourceSansPro-Regular;
+  font-size: 35px;
+  text-decoration: none;
+  color: #1F497D; }
+.path-taxonomy #block-project-content article h2 a::after {
+  content: "  ";
+  background: #1F497D;
+  height: 1px;
+  width: 100%;
+  display: block; }
+.path-taxonomy #block-project-content article .field--name-field-date-de-publication {
+  /*                background:red;*/
+  font-size: 25px;
+  color: #C00000;
+  font-family: 'Open Sans', sans-serif;
+  float: left;
+  width: 20%;
+  margin-top: 37px;
+  margin-bottom: 40px; }
+.path-taxonomy #block-project-content article .field--name-field-synthese {
+  float: right;
+  max-width: 80%; }
+  .path-taxonomy #block-project-content article .field--name-field-synthese .field__label {
+    font-size: 25px;
+    color: #C00000;
+    font-family: 'Open Sans', sans-serif;
+    /*                    background: blue;*/
+    margin-top: 43px; }
+  .path-taxonomy #block-project-content article .field--name-field-synthese .field__label::after {
+    content: "  ";
+    background: #C00000;
+    height: 1px;
+    width: 100%;
+    display: block; }
+  .path-taxonomy #block-project-content article .field--name-field-synthese p {
+    margin: 10px auto; }
+.path-taxonomy #block-project-content article .field--name-field-fichier-pdf-du-document a {
+  color: red; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 14 juin 2017, 10:38:27
+    Author     : coretechs
+*/
+#block-views-block-liste-rapport-activite-block-rapports .field--name-field-date-de-publication {
+  font-size: 25px;
+  color: #C00000;
+  font-family: 'Open Sans', sans-serif; }
+#block-views-block-liste-rapport-activite-block-rapports a {
+  text-decoration: none;
+  color: #1F497D; }
+  #block-views-block-liste-rapport-activite-block-rapports a .field--name-title {
+    font-family: SourceSansPro-Regular;
+    font-size: 35px; }
+#block-views-block-liste-rapport-activite-block-rapports .field--name-field-rapport-synthese {
+  width: 80%; }
+  #block-views-block-liste-rapport-activite-block-rapports .field--name-field-rapport-synthese p {
+    margin: 0;
+    /*            float:right;*/ }
+#block-views-block-liste-rapport-activite-block-rapports .field--name-field-image {
+  float: left;
+  width: 20%; }
+#block-views-block-liste-rapport-activite-block-rapports .field--name-field-pdf-rapport {
+  float: right; }
+  #block-views-block-liste-rapport-activite-block-rapports .field--name-field-pdf-rapport a {
+    color: red;
+    /*            position: relative;
+                top: -100px;
+                left: -646px;*/ }
 
 /*# sourceMappingURL=style.css.map */
