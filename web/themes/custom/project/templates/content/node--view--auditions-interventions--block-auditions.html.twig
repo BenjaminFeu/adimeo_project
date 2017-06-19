@@ -1,0 +1,11 @@
+<article>
+    {{ content.	field_date_audition }}
+    {{ title_prefix }}
+    {% if not page %}
+        <h5{{ title_attributes }}>
+            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h5>
+    {% endif %}
+    {{ title_suffix }}
+    {{ content.field_video }}
+</article>

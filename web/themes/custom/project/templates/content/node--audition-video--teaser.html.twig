@@ -1,15 +1,11 @@
-<div style="clear:both">
-    <div class="view-display-id-block_2">
-        <div class="audition">
-            {{ content.field_date_audition }}
-            {{ title_prefix }}
-            {% if not page %}
-                <h2{{ title_attributes }}>
-                    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-                </h2>
-            {% endif %}
-            {{ title_suffix }}
-            {{ content.field_video }}
-        </div>
-    </div>
-</div>
+<article>
+    {{ content.field_date_audition }}
+    {{ title_prefix }}
+    {% if not page %}
+        <h2{{ title_attributes }}>
+            <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h2>
+    {% endif %}
+    {{ title_suffix }}
+    {{ content.field_video }}
+</article>

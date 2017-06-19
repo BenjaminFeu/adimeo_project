@@ -1,0 +1,44 @@
+footer{
+    height:364px;
+    #block-formblock{
+        /*        background-color: #4A6896 ;
+                background-image: url(../images/cour-des-comptes.jpg);*/
+        background: linear-gradient(0deg, rgba(2,173,231,0.5), rgba(2,173,231,0.5)), url(../images/cour-des-comptes.jpg);
+        text-align:center;
+
+        h6{
+            color: #FFFFFF ;
+            text-transform: uppercase;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: normal;
+            position: relative;
+            top: 45px;
+            font-size:30px;
+            text-align:center;
+        }
+        p{
+            color:white;
+            font-size: 16px;
+            text-align: center;
+        }
+        .form-item-email.form-no-label {
+            display: inline;
+            margin:0;
+
+            #edit-email{
+                text-align:center;
+                margin: 0 auto;
+                width:50%;
+                /*                margin: 0;*/
+            }
+        }
+        #edit-submit{
+            background: white;
+            color: #4A6896;
+            background-color: rgba(2, 173, 231, 0.5)
+        }
+
+    }
+}
+
+

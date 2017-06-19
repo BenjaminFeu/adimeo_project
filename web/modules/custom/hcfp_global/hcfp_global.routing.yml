@@ -6,3 +6,12 @@ hcfp_global.home_page_controller_index:
     _title: 'Home'
   requirements:
     _permission: 'access content'
+
+hcfp_global.default_form:
+  path: '/hcfp_global/form/default'
+  defaults:
+    _form: '\Drupal\hcfp_global\Form\DefaultForm'
+    _title: 'DefaultForm'
+  requirements:
+    _access: 'TRUE'
+  

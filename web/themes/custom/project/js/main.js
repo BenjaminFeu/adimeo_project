@@ -1,15 +1,14 @@
-function log(...data) {
-    console.log(...data);
-}
+
 (function($) {
-//    $(document).ready(function() {
-////        console.log("test");
-//        $('.view-liste-des-avis .views-row a').hide();
-//    });
+    $(document).ready(function() {
+//        console.log("test");
+        $('.view-liste-avis .views-row a').hide();
+    });
     $('h3').on('click', e => {
+        let reveal = $('.view-liste-avis .views-row a');
         console.log("click");
 //        let target = $(e.target);
-//        target.siblings().toggle(1000);
+        reveal.toggle(1000);
         let view = $('div.field-content a');
         console.log(view);
         for (let i = 0; i < view.length; i++) {
